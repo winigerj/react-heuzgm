@@ -1,6 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import MyForm from './myForm';
+import './style.css';
 
-import App from "./App";
+class App extends Component {
+  constructor() {
+    super();
+  }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+  render() {
+    return (
+      <div>
+        <MyForm />
+      </div>
+    );
+  }
+}
+
+render(<App />, document.getElementById('root'));
